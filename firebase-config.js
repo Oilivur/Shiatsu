@@ -15,7 +15,9 @@ const firebaseConfig = {
 
     messagingSenderId: "147098176620",
 
-    appId: "1:147098176620:web:d6f498f7f97c7c72e31c49"
+    appId: "1:147098176620:web:d6f498f7f97c7c72e31c49",
+
+    databaseURL: "https://shiatsu-b4dae-default-rtdb.europe-west1.firebasedatabase.app/"
 
 };
 

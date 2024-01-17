@@ -29,14 +29,27 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 5vh;
     margin-bottom: 0;
 }
   
+.title {
+    color: #32302c;
+}
+
+.title h1 {
+    font-size: 100px;
+}
+
+.title h3 {
+    font-size: 30px;
+}
+
 .regbox {
     width: 80%;
     height: 40%;
-    background-color: #6B450B;
+    overflow-y: auto;
+    background-color: #c19757;
     border-radius: 20px;
     margin-top: 20px;
 }
