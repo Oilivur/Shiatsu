@@ -17,8 +17,8 @@ function adminLogin() {
         // Set isAdmin to true in localStorage
         localStorage.setItem("isAdmin", "true");
   
-        // Redirect to index.html
-        window.location.href = "index.html";
+        // Redirect to regstr.html
+        window.location.href = "regstr.html";
       })
       .catch((error) => {
         const errorCode = error.code;
