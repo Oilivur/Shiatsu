@@ -19,12 +19,22 @@ header {
     left: 0;
     width: 100%;
     padding: 1.3rem 10%;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(50px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
 }
 
 .logo {
@@ -40,6 +50,15 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     margin-left: 2.5rem;
+    transition: .3s ease;
+}
+
+nav a:hover {
+    color: rgb(47, 193, 103);
+}
+
+nav a:focus {
+    color: green;
 }
 
 #check {
@@ -64,9 +83,19 @@ nav a {
     font-size: 1.3rem;
 }
 
+.kontakt p {
+    text-align: left;
+    margin: 0.55rem;
+}
+
 p {
     text-align: center;
     color: blanchedalmond;
+    margin-top: 2rem;
+}
+
+.shp {
+    margin-top: 1.25rem;
 }
 
 .slideshow {
@@ -128,18 +157,12 @@ footer h3 {
     color: blanchedalmond;
 }
 
-/* Breakpoints */
-@media (max-width: 949px) {
-    header {
-        padding: 1.3rem 5%;
-    }
-
-    .intro {
-        max-width: 88%;
-    }
+footer p {
+    margin: 0;
 }
 
-@media (max-width: 600px) {
+/* Breakpoints */
+@media (max-width: 1079px) {
     .icons {
         display: inline-flex;
     }
@@ -170,7 +193,7 @@ footer h3 {
     }
 
     #check:checked~nav {
-        height: 13rem;
+        height: 16rem;
     }
 
     nav a {
@@ -188,5 +211,6 @@ footer h3 {
 
     .intro {
         font-size: 1.1rem;
+        max-width: 80%;
     }
 }

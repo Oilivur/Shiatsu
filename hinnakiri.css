@@ -1,0 +1,24 @@
+table {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid blanchedalmond;
+    text-align: center;
+    padding: 8px;
+    color: blanchedalmond;
+}
+
+th {
+    background-color: #3a2300;
+}
+
+td {
+    background-color: #3a2300b6;
+}
+
+#rt5 {
+    margin-top: 0.15rem;
+}
