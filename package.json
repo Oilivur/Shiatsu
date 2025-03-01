@@ -1,0 +1,32 @@
+{
+  "name": "shiatsu",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oilivur/Shiatsu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oilivur/Shiatsu/issues"
+  },
+  "homepage": "https://github.com/Oilivur/Shiatsu#readme",
+  "description": "",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "firebase": "^11.4.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}
