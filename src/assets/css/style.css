@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,9 +14,9 @@ body {
     background-position: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-y: auto;
-}
-
-header {
+  }
+  
+  header {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,9 +26,9 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-}
-
-header::before {
+  }
+  
+  header::before {
     content: "";
     position: absolute;
     top: 0;
@@ -38,143 +38,48 @@ header::before {
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(50px);
     z-index: -1;
-}
-
-.logo {
+  }
+  
+  .logo {
     font-size: 2rem;
     color: blanchedalmond;
     text-decoration: none;
     font-weight: 700;
-}
-
-nav a {
+  }
+  
+  nav a {
     font-size: 1.3rem;
     color: blanchedalmond;
     text-decoration: none;
     font-weight: 500;
     margin-left: 2.5rem;
     transition: .3s ease;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     color: rgb(47, 193, 103);
-}
-
-nav a:focus {
+  }
+  
+  nav a:focus {
     color: green;
-}
-
-#check {
-    display: none;
-}
-
-.icons {
-    position: absolute;
-    right: 5%;
-    font-size: 2.8rem;
-    color: blanchedalmond;
-    cursor: pointer;
-    display: none;
-}
-
-.intro {
-    max-width: 50%;
-    margin-top: 5rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
-    font-size: 1.3rem;
-}
-
-.kontakt p {
-    text-align: left;
-    margin: 0.55rem;
-}
-
-p {
-    text-align: center;
-    color: blanchedalmond;
-    margin-top: 2rem;
-}
-
-.shp {
-    margin-top: 1.25rem;
-}
-
-footer {
-    margin-top: auto;
-    text-align: center;
-}
-
-footer h3 {
-    color: blanchedalmond;
-}
-
-footer p {
-    margin: .25rem;
-}
-
-/* Breakpoints */
-@media (max-width: 1079px) {
-    .icons {
-        display: inline-flex;
-    }
-
-    #check:checked~.icons #menu-icon {
-        display: none;
-    }
-
-    .icons #x-icon {
-        display: none;
-    }
-
-    #check:checked~.icons #x-icon {
-        display: block;
-    }
-
-    nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background: rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(50px);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-        overflow: hidden;
-        transition: .3s ease;
-    }
-
-    #check:checked~nav {
-        height: 18rem;
-    }
-
-    nav a {
-        display: block;
-        font-size: 1.1rem;
-        margin: 1.5rem 0;
-        text-align: center;
-        transform: translateY(-50px);
-        transition: .4s ease;
-    }
-
-    #check:checked~nav a {
-        transform: translateY(0);
-    }
-
+  }
+  
+  /* Breakpoints */
+  @media (max-width: 1079px) {
     .intro {
-        font-size: 1.1rem;
-        max-width: 80%;
+      font-size: 1.1rem;
+      max-width: 80%;
     }
-}
-
-@media (max-width: 767px) {
+  }
+  
+  @media (max-width: 767px) {
     .slider {
-        scrollbar-width: none !important; /* Hide scrollbar in Firefox */
-        -ms-overflow-style: none !important; /* Hide scrollbar in Edge/IE */
+      scrollbar-width: none !important;
+      -ms-overflow-style: none !important;
     }
-
+  
     .slider::-webkit-scrollbar {
-        display: none !important; /* Hide scrollbar in Chrome, Safari */
+      display: none !important;
     }
-}
+  }
+  
