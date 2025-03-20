@@ -37,10 +37,10 @@ jobs:
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v3  # 🔥 Ensures Pages is ready
 
-      - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v1  # 🔥 GitHub Pages needs this
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v1  # ✅ Use correct GitHub Pages upload action
         with:
-          path: dist  # ✅ Make sure this matches your build output folder
+          path: dist  # ✅ Ensure this matches your Vite build output folder
 
       - name: Deploy to GitHub Pages
         id: deployment
