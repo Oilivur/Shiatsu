@@ -33,7 +33,7 @@ h1 {
   font-size: 2.5rem;
   text-align: center;
   font-weight: bold;
-  color: #ffeb7a; /* Warm gold tone */
+  color: blanchedalmond; /* Warm gold tone */
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Subtle glow */
   margin-bottom: 1.5rem;
 }
@@ -42,8 +42,8 @@ h1 {
 .content-box {
   max-width: 45rem;
   padding: 2rem;
-  border-radius: 1.25rem;
-  background: rgba(0, 0, 0, 0.5); /* Slightly darker for better contrast */
+  border-radius: 4rem;
+  background: rgba(106, 133, 33, 0.5); /* Slightly darker for better contrast */
   backdrop-filter: blur(1rem);
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -67,7 +67,7 @@ h1 {
   height: 25rem;
   object-fit: cover;
   border-radius: 50%; /* Circular shape */
-  border: 3px solid #ffeb7a; /* Matches `h1` color */
+  border: 3px solid blanchedalmond; /* Matches `h1` color */
   margin-bottom: 1rem;
 }
 
@@ -76,7 +76,7 @@ h1 {
   margin-bottom: 1.5rem; /* Adds space below title */
   font-weight: bold;
   text-align: center;
-  color: #ffeb7a; /* Warm golden tone for emphasis */
+  color: blanchedalmond; /* Warm golden tone for emphasis */
 }
 
 .content-box p {
