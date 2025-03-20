@@ -22,10 +22,13 @@ jobs:
           node-version: 18  # ⚡ Use latest stable Node.js
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci  # Ensures a clean install for CI/CD
+
+      - name: Verify Vite Installation
+        run: npx vite --version  # Logs the Vite version to confirm it's installed
 
       - name: Build Project
-        run: npm run build
+        run: npx vite build  # Uses npx to ensure vite runs correctly
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
