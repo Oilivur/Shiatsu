@@ -6,7 +6,8 @@
         <!-- Profile Image -->
         <img src="@/assets/pictures/boss.jpg" alt="Terje Loorits" class="profile-pic">
 
-        <h2>Juhendaja Terje Loorits</h2>
+        <h2>Juhendaja</h2>
+        <h2 class="name">Terje Loorits</h2>
   
         <p>
           Liikumine, võimlemine ja venitamine on minu jaoks alati olnud olulised – need aitavad hoida 

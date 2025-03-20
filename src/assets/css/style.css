@@ -42,7 +42,7 @@ h1 {
 .content-box {
   max-width: 45rem;
   padding: 2rem;
-  border-radius: 4rem;
+  border-radius: 2rem;
   background: rgba(106, 133, 33, 0.5); /* Slightly darker for better contrast */
   backdrop-filter: blur(1rem);
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.3);
@@ -63,8 +63,8 @@ h1 {
 }
 
 .profile-pic {
-  width: 25rem; /* Adjust size as needed */
-  height: 25rem;
+  width: clamp(8rem, 30vw, 25rem); /* Responsive sizing */
+  height: clamp(8rem, 30vw, 25rem);
   object-fit: cover;
   border-radius: 50%; /* Circular shape */
   border: 3px solid blanchedalmond; /* Matches `h1` color */
@@ -72,11 +72,17 @@ h1 {
 }
 
 .content-box h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem; /* Adds space below title */
+  font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
-  color: blanchedalmond; /* Warm golden tone for emphasis */
+  color: blanchedalmond;
+  margin-bottom: 0.5rem; /* Less space below */
+}
+
+/* 🔹 Style the Name Separately */
+.content-box h2.name {
+  font-size: 1.8rem; /* Slightly smaller */
+  margin-bottom: 1.5rem; /* Adds space before paragraphs */
 }
 
 .content-box p {
@@ -141,12 +147,27 @@ nav a.active {
   color: rgb(47, 193, 103);
 }
 
-/* 🔹 Breakpoints (For Mobile Responsiveness) */
-@media (max-width: 1079px) {
-  .intro {
-    font-size: 1.1rem;
-    max-width: 80%;
-  }
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.3); /* Subtle dark background */
+  backdrop-filter: blur(8px);
+  color: blanchedalmond;
+  font-size: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft top shadow */
+}
+
+footer h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 @media (max-width: 767px) {
@@ -159,8 +180,19 @@ nav a.active {
   }
 
   .content-box {
-    max-width: 90%; /* Prevents oversized text boxes */
+    max-width: 95%; /* Prevents oversized text boxes */
     padding: 1rem;
+  }
+
+  .content-box p {
+    font-size: 1rem;
+    line-height: 1.4; /* Reduces excessive gaps */
+    margin-bottom: 0.8rem; /* Keeps consistent spacing */
+  }
+
+  .profile-pic {
+    width: clamp(12rem, 60vw, 18rem); /* Adjusts dynamically */
+    height: clamp(12rem, 60vw, 18rem);
   }
 
   .slider {
@@ -183,5 +215,18 @@ nav a.active {
   nav a {
     font-size: 1.1rem;
     margin-left: 1.5rem;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  footer h3 {
+    font-size: 1.2rem;
+  }
+  
+  footer p {
+    font-size: 0.85rem;
   }
 }
