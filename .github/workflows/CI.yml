@@ -10,7 +10,7 @@ on:
 permissions:
   contents: write
   pages: write
-  id-token: write
+  id-token: write  # Required for GitHub Pages
 
 jobs:
   build-and-deploy:
@@ -34,13 +34,14 @@ jobs:
       - name: Build Project
         run: npm run build  # Ensures Vite builds the project correctly
 
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v3  # 🔥 Ensures Pages is ready
+
       - name: Upload Artifact
-        uses: actions/upload-artifact@v4  # ✅ Fixed incorrect action name
+        uses: actions/upload-pages-artifact@v1  # 🔥 GitHub Pages needs this
         with:
-          name: github-pages  # ✅ This name is important for the next step
           path: dist  # ✅ Make sure this matches your build output folder
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-
