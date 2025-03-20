@@ -95,8 +95,9 @@ export default {
 
 .slider-wrapper {
     position: relative;
-    max-width: 60rem;
+    max-width: min(60rem, 90vw);
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .slider {
@@ -107,6 +108,7 @@ export default {
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem  -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
+    max-width: 100%;
 }
 
 /* Custom scrollbar for Firefox */

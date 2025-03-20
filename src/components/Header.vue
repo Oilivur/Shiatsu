@@ -13,11 +13,25 @@
 
     <!-- Mobile dropdown menu (🔥 No inline height, fully CSS controlled) -->
     <nav :class="{ 'open': menuOpen }">
-      <router-link v-for="item in menuItems" :key="item.link" :to="item.link">
+      <router-link 
+        v-for="item in menuItems" 
+        :key="item.link" 
+        :to="item.link" 
+        active-class="active"
+        @click="menuOpen = false"
+      >
         {{ item.label }}
       </router-link>
+    
+      <router-link 
+        v-if="isAdmin" 
+        to="/admin" 
+        active-class="active"
+        @click="menuOpen = false"
+      >
+      Admin
+    </router-link>
 
-      <router-link v-if="isAdmin" to="/admin">Admin</router-link>
       <button v-if="isAdmin" @click="handleLogout">Logout</button>
     </nav>
   </header>
@@ -40,6 +54,15 @@ export default {
       { label: "Kontakt", link: "/kontakt" }
     ];
 
+    const closeMenuOnOutsideClick = (event) => {
+      const nav = document.querySelector("nav");
+      const icons = document.querySelector(".icons");
+
+      if (menuOpen.value && nav && !nav.contains(event.target) && !icons.contains(event.target)) {
+        menuOpen.value = false;
+      }
+    };
+
     const checkScreenSize = () => {
       if (window.innerWidth > 1079) {
         menuOpen.value = false; // Ensure menu stays closed on large screens
@@ -48,6 +71,7 @@ export default {
 
     onMounted(() => {
       window.addEventListener("resize", checkScreenSize);
+      document.addEventListener("click", closeMenuOnOutsideClick);
 
       // ✅ Securely check admin status
       const storedKey = localStorage.getItem("adminKey");
@@ -58,6 +82,7 @@ export default {
 
     onUnmounted(() => {
       window.removeEventListener("resize", checkScreenSize);
+      document.removeEventListener("click", closeMenuOnOutsideClick);
     });
 
     return { menuOpen, menuItems, isAdmin, handleLogout };
