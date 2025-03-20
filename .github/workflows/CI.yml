@@ -3,7 +3,7 @@ name: Deploy Vite App to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # 🚀 Runs when pushing to main branch
 
   workflow_dispatch:  # Allows manual runs from GitHub Actions tab
 
@@ -26,19 +26,21 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 22
+          node-version: 22  # 🔥 Use Node.js 22 (matches your local version)
 
       - name: Install Dependencies
         run: npm ci  # Ensures a clean install for CI/CD
 
       - name: Build Project
-        run: npm run build  # Ensures vite builds the project correctly
+        run: npm run build  # Ensures Vite builds the project correctly
 
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v4  # ✅ Fixed incorrect action name
         with:
-          path: dist
+          name: github-pages  # ✅ This name is important for the next step
+          path: dist  # ✅ Make sure this matches your build output folder
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
