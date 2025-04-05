@@ -1,0 +1,9 @@
+:root {
+    --color-text: blanchedalmond;
+    --color-accent: rgb(47, 193, 103);
+    --color-header-bg: rgba(0, 0, 0, 0.1);
+    --color-box-bg: rgba(106, 133, 33, 0.5);
+    --color-footer-bg: rgba(0, 0, 0, 0.3);
+    --color-shadow: rgba(0, 0, 0, 0.2);
+  }
+  

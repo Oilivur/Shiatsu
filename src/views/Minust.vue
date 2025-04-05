@@ -6,7 +6,6 @@
         <!-- Profile Image -->
         <img src="@/assets/pictures/boss.jpg" alt="Terje Loorits" class="profile-pic">
 
-        <h2>Juhendaja</h2>
         <h2 class="name">Terje Loorits</h2>
   
         <p>

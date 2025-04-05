@@ -16,11 +16,6 @@
     </div>
 
     <Slider />
-
-    <footer>
-      <h3>&copy; Terindo</h3>
-      <p>terje@terindo.ee</p>
-    </footer>
   </main>
 </template>
 

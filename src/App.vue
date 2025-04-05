@@ -1,17 +1,28 @@
 <template>
-    <Header :isAdmin="isAdmin" />
-    <router-view />
-  </template>
+    <div id="app-layout">
+      <Header :isAdmin="isAdmin" />
+
+      <router-view />
+      <div style="height: 4vh;"></div>
+
+
+      <footer>
+        <h3>&copy; Terindo</h3>
+        <p>terje@terindo.ee</p>
+      </footer>
+    </div>
+</template>
   
-  <script>
-  import "@/assets/css/style.css";
-  import Header from "@/components/Header.vue";
-  import { ref, onMounted, onUnmounted, provide } from "vue";
-  import { auth, database } from "@/firebase"; // Import Firebase Auth & Database
-  import { signInWithEmailAndPassword, signOut } from "firebase/auth";
-  import { get, ref as dbRef } from "firebase/database";
   
-  export default {
+<script>
+import "@/assets/css/style.css";
+import Header from "@/components/Header.vue";
+import { ref, onMounted, onUnmounted, provide } from "vue";
+import { auth, database } from "@/firebase"; // Import Firebase Auth & Database
+import { signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { get, ref as dbRef } from "firebase/database";
+
+export default {
       components: { Header },
       setup() {
           const isAdmin = ref(false);
