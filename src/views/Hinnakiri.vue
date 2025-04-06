@@ -8,7 +8,7 @@
         <ul class="price-list">
           <li>
             <span>Shindo massaaž (1,5h)</span>
-            <span>55 €</span>
+            <span>60 €</span>
           </li>
           <li>
             <span>Shindo privaatne venitus (1h)</span>
@@ -20,7 +20,7 @@
           </li>
           <li>
             <span>MER-teraapia (1,5h)</span>
-            <span>60 €</span>
+            <span>65 €</span>
           </li>
           <li>
             <span>Lomi-Lomi Nui massaaž (1,5h)</span>
