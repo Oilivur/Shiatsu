@@ -24,6 +24,10 @@
           minuni MER-i imetoimed emotsioonide vabastamisel. Need kogemused on süvendanud minu arusaamist 
           keha ja meele harmooniast ning andnud mulle uusi võimalusi seda teistega jagada.
         </p>
+
+        <p>
+          Ki-Shiatsu mõnusalt lõõgastava ja taastava energeetilise teraapiaga alustasin 2022 aastal 
+        </p>
   
         <p>
           Minu jaoks on Shindo võlu puudutuses – see on midagi, mida ise vajan ning mida tahan ka teistele 

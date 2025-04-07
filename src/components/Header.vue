@@ -2,16 +2,13 @@
   <header>
     <router-link to="/" class="logo">Terindo</router-link>
 
-    <!-- Hidden Checkbox for Burger Menu -->
     <input type="checkbox" id="check" v-model="menuOpen">
 
-    <!-- Burger Icon -->
     <label for="check" class="icons">
       <i class="bx bx-menu" v-if="!menuOpen"></i>
       <i class="bx bx-x" v-else></i>
     </label>
 
-    <!-- Mobile dropdown menu (🔥 No inline height, fully CSS controlled) -->
     <nav :class="{ 'open': menuOpen }">
       <router-link 
         v-for="item in menuItems" 
@@ -65,7 +62,7 @@ export default {
 
     const checkScreenSize = () => {
       if (window.innerWidth > 1079) {
-        menuOpen.value = false; // Ensure menu stays closed on large screens
+        menuOpen.value = false;
       }
     };
 
@@ -73,7 +70,6 @@ export default {
       window.addEventListener("resize", checkScreenSize);
       document.addEventListener("click", closeMenuOnOutsideClick);
 
-      // ✅ Securely check admin status
       const storedKey = localStorage.getItem("adminKey");
       if (storedKey) {
         isAdmin.value = true;
@@ -91,7 +87,6 @@ export default {
 </script>
 
 <style scoped>
-/* Hide the checkbox input */
 #check {
   display: none;
 }
@@ -122,7 +117,7 @@ export default {
     align-items: center;
     text-align: center;
     opacity: 0;
-    height: 0; /* 🔥 Completely removes Vue's forced height */
+    height: 0;
     transition: opacity 0.5s ease, transform 0.5s ease, height 0.5s ease;
     pointer-events: none;
   }
@@ -131,7 +126,7 @@ export default {
     opacity: 1;
     transform: translateY(0);
     background: rgba(0, 0, 0, 0.1);
-    height: auto; /* 🔥 Now uses natural height */
+    height: auto;
     pointer-events: auto;
   }
 
@@ -149,7 +144,6 @@ export default {
     transform: translateY(0);
   }
 
-  /* 🔥 Stagger effect for links appearing one by one */
   nav.open a:nth-child(1) { transition-delay: 0.1s; }
   nav.open a:nth-child(2) { transition-delay: 0.2s; }
   nav.open a:nth-child(3) { transition-delay: 0.3s; }

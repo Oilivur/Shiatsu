@@ -15,6 +15,10 @@
           <a href="mailto:terje.loorits@gmail.com">terje.loorits@gmail.com</a>
         </p>
 
+        <p class="kontakt-loc">
+          Tallinn-Nõmme, Keila, Saku
+        </p>
+
       </div>
     </main>
   </template>
@@ -38,7 +42,7 @@
   font-size: 1.2rem;
   margin-bottom: 1rem;
   padding-bottom: 0.8rem;
-  border-bottom: 1px solid rgba(255, 235, 205, 0.2); /* subtle blanchedalmond-ish divider */
+  border-bottom: 1px solid rgba(255, 235, 205, 0.2);
 }
 
 .kontakt-row:last-of-type {
@@ -46,7 +50,7 @@
 }
 
 .kontakt-row span {
-  min-width: 5rem; /* ✅ consistent label width for alignment */
+  min-width: 5rem;
   font-weight: 500;
 }
 
@@ -58,6 +62,10 @@
 
 .kontakt-row a:hover {
   color: rgb(47, 193, 103);
+}
+
+.kontakt-loc {
+  text-align: center;
 }
 
 </style>
