@@ -4,7 +4,7 @@
   
       <div class="content-box">
         <!-- Profile Image -->
-        <img src="@/assets/pictures/boss.jpg" alt="Terje Loorits" class="profile-pic">
+        <img src="@/assets/pictures/boss.webp" alt="Terje Loorits" class="profile-pic">
 
         <h2 class="name">Terje Loorits</h2>
   

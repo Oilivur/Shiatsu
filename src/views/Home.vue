@@ -15,18 +15,18 @@
       </p>
     </div>
 
-    <Slider />
+    <Carousel />
   </main>
 </template>
 
 
 
 <script>
-import Slider from "@/components/Slider.vue"; // Import the new slider component
+import Carousel from "@/components/Carousel.vue";
 
 export default {
   components: {
-    Slider
+    Carousel
   }
 };
 </script>
