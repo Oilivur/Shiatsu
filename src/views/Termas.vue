@@ -146,7 +146,7 @@ ul, li {
 
 .content-box em {
   font-style: italic;
-  color: var(--color-highlight, blanchedalmond);
+  color: var(--color-text-highlight);
 }
 
 .price-link {
@@ -154,7 +154,7 @@ ul, li {
   bottom: 1.5rem;
   right: 2rem;
   font-size: 1rem;
-  color: blanchedalmond;
+  color: var(--color-text-highlight);
   text-decoration: none;
   font-weight: bold;
   opacity: 0.9;
@@ -162,7 +162,7 @@ ul, li {
 }
 
 .price-link:hover {
-  color: rgb(47, 193, 103);
+  color: var(--color-accent);
 }
 
 @media (max-width: 768px) {

@@ -11,11 +11,7 @@ body {
   padding-top: 5em;
   display: flex;
   flex-direction: column;
-  background-image: url("@/assets/pictures/bambustaust.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: var(--color-bg);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   overflow-y: auto;
 }
@@ -49,23 +45,18 @@ h1 {
 .content-box {
   max-width: 45rem;
   padding: 2rem;
-  border-radius: 2rem;
-  background: var(--color-box-bg);
-  backdrop-filter: blur(1rem);
-  box-shadow: 0px 0.5rem 1rem var(--color-footer-bg);
+  border-radius: 0; /* Rectangular corners */
   text-align: center;
   color: var(--color-text);
   position: relative;
+  box-shadow: none; /* Removed shadows */
+  backdrop-filter: none; /* No blur */
 }
 
 .content-box::before {
-  content: "";
-  position: absolute;
-  inset: -0.5rem;
-  border-radius: inherit;
-  background: radial-gradient(var(--color-shadow), transparent);
-  z-index: -1;
+  display: none; /* Remove radial gradient shadow */
 }
+
 
 .profile-pic {
   width: clamp(8rem, 30vw, 25rem);
@@ -115,7 +106,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--color-header-bg);
+  background: var(--color-panel-bg);
   backdrop-filter: blur(3rem);
   z-index: -1;
 }
@@ -141,7 +132,7 @@ nav a:hover {
 }
 
 nav a:focus {
-  color: green;
+  color: rgb(247, 194, 50);
 }
 
 nav a.active {
@@ -152,13 +143,11 @@ footer {
   width: 100%;
   text-align: center;
   padding: 1.5rem;
-  background: var(--color-footer-bg);
-  backdrop-filter: blur(8px);
+  background: var(--color-panel-bg);
   color: var(--color-text);
   font-size: 1rem;
   margin-top: auto;
   margin-bottom: 1.5rem;
-  box-shadow: 0 -4px 10px var(--color-shadow);
 }
 
 footer h3 {

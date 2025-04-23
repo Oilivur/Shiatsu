@@ -95,7 +95,7 @@ export default {
   display: none;
   cursor: pointer;
   font-size: 2rem;
-  color: blanchedalmond;
+  color: var(--color-text);
 }
 
 @media (max-width: 1079px) {

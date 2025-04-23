@@ -36,32 +36,29 @@
 
 .kontakt-row {
   display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.2rem;
+  flex-direction: column; /* Stack vertically */
+  align-items: flex-start;
+  font-size: 1.1rem;
+  gap: 0.3rem;
   margin-bottom: 1rem;
   padding-bottom: 0.8rem;
   border-bottom: 1px solid rgba(255, 235, 205, 0.2);
 }
-
 .kontakt-row:last-of-type {
   border-bottom: none;
 }
 
 .kontakt-row span {
-  min-width: 5rem;
   font-weight: 500;
 }
 
 .kontakt-row a {
-  color: blanchedalmond;
+  color: var(--color-text);
   text-decoration: none;
   font-weight: bold;
-}
-
-.kontakt-row a:hover {
-  color: rgb(47, 193, 103);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  font-size: 1rem;
 }
 
 .kontakt-loc {

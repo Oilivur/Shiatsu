@@ -1,9 +1,9 @@
 :root {
-    --color-text: blanchedalmond;
-    --color-accent: rgb(47, 193, 103);
-    --color-header-bg: rgba(0, 0, 0, 0.1);
-    --color-box-bg: rgba(106, 133, 33, 0.5);
-    --color-footer-bg: rgba(0, 0, 0, 0.3);
-    --color-shadow: rgba(0, 0, 0, 0.2);
-  }
-  
+  --color-bg: #d1d1b8bb;
+  --color-text: #39323a;
+  --color-text-highlight: #94c772;
+  --color-accent: rgb(138, 156, 95);
+  --color-panel-bg: rgba(16, 233, 132, 0.068);
+  --color-box-bg: #d8f3be;
+  --color-shadow: rgba(248, 240, 171, 0.521);
+}
