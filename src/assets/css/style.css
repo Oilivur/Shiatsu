@@ -11,7 +11,11 @@ body {
   padding-top: 5em;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-bg);
+  background-image: var(--background-pic);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   overflow-y: auto;
 }
@@ -132,7 +136,7 @@ nav a:hover {
 }
 
 nav a:focus {
-  color: rgb(247, 194, 50);
+  color: var(--color-text-highlight);
 }
 
 nav a.active {

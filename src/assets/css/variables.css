@@ -1,9 +1,10 @@
 :root {
   --color-bg: #d1d1b8bb;
-  --color-text: #39323a;
-  --color-text-highlight: #94c772;
-  --color-accent: rgb(138, 156, 95);
-  --color-panel-bg: rgba(16, 233, 132, 0.068);
-  --color-box-bg: #d8f3be;
-  --color-shadow: rgba(248, 240, 171, 0.521);
+  --background-pic: url("../pictures/taust.png");
+  --color-text: #3a1a2c; /*deep plum: #3a1a2c, charcoal: #2e2e2e*/
+  --color-text-highlight: #a266c2; /*some blue would be nice: #3c84e2*/
+  --color-accent: #fbd4e4;
+  --color-panel-bg: #ffffff2f;
+  --color-box-bg: #fff5f9b3;
+  --color-shadow: #f8f0ab85;
 }

@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router/router.js";
 import "boxicons/css/boxicons.min.css";
+import './assets/css/variables.css'
 
 
 const app = createApp(App);

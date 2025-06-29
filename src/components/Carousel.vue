@@ -191,7 +191,7 @@
     border-radius: 0.5rem;
     max-width: 100%;
     scrollbar-width: thin;
-    scrollbar-color: rgb(101, 162, 97) rgba(255, 255, 255, 0.2);
+    scrollbar-color: var(--color-accent) rgba(255, 255, 255, 0.2);
   }
   .slider::-webkit-scrollbar {
     height: 8px;
@@ -201,11 +201,11 @@
     border-radius: 10px;
   }
   .slider::-webkit-scrollbar-thumb {
-    background: rgb(101, 162, 97);
+    background: var(--color-accent);
     border-radius: 10px;
   }
   .slider::-webkit-scrollbar-thumb:hover {
-    background: rgb(50, 120, 50);
+    background: #f5b9c9;
   }
   
   .carousel-slide {
@@ -236,7 +236,7 @@
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: rgb(101, 162, 97);
+    background-color: var(--color-accent);
     opacity: 0.75;
     transition: opacity ease 250ms;
     border: none;
@@ -247,7 +247,7 @@
   }
   .dot.active {
     opacity: 1;
-    background-color: rgb(222, 255, 73);
+    background-color: var(--color-text-highlight);
   }
   
   .nav-button {
