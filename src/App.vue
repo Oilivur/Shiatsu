@@ -3,19 +3,25 @@
       <Header :isAdmin="isAdmin" />
 
       <router-view />
-      <div style="height: 4vh;"></div>
 
 
-      <footer>
-        <h3>&copy; Terindo</h3>
-        <p>terje@terindo.ee</p>
+      <footer class="site-footer">
+        <div class="footer-inner">
+            <img class="footer-logo" :src="footerLogo" alt="Terindo" />
+            <a class="footer-email" href="mailto:terje@terindo.ee">
+            terje@terindo.ee
+            </a>
+        </div>
       </footer>
+
+
     </div>
 </template>
   
   
 <script>
 import "@/assets/css/style.css";
+import footerLogo from "@/assets/pictures/brand/Terindo-Logo-Horizontal-dark.png";
 import Header from "@/components/Header.vue";
 import { ref, onMounted, onUnmounted, provide } from "vue";
 import { auth, database } from "@/firebase"; // Import Firebase Auth & Database
@@ -114,7 +120,7 @@ export default {
   
           provide("handleLogout", handleLogout);
   
-          return { isAdmin };
+          return { isAdmin, footerLogo };
       },
   };
   </script>

@@ -2,12 +2,13 @@
   "name": "shiatsu",
   "version": "1.0.0",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "build:local": "vite build --config vite.config.local.js",
+  "preview": "vite preview",
+  "serve": "npx serve dist"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Oilivur/Shiatsu.git"

@@ -5,7 +5,7 @@
       <div class="content-box">
         <!-- 🟢 Tuesday session -->
         <div class="session-block">
-          <p class="weekday">Teisipäeviti kell 17:45</p>
+          <p class="weekday">Esmaspäeviti ja teisipäeviti kell 17:45</p>
           <p class="place">Rahumäe Põhikool – Vabaduse pst 50, Tallinn</p>
           <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.0021228878852!2d24.700928077328744!3d59.38299170672401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692953d52d28a4b%3A0x5929cdfeb0e0b0f8!2sVabaduse%20pst%2050%2C%2011615%20Tallinn!5e0!3m2!1set!2see!4v1744010222394!5m2!1set!2see" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

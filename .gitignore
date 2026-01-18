@@ -1,0 +1,4 @@
+vite.config.local.js
+package.json
+/dist
+/node_modules

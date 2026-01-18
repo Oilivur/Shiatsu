@@ -1,6 +1,9 @@
 <template>
   <header>
-    <router-link to="/" class="logo">Terindo</router-link>
+    <router-link to="/" class="logo" aria-label="Terindo">
+      <img class="logo-img" :src="logoPng" alt="Terindo" />
+    </router-link>
+
 
     <input type="checkbox" id="check" v-model="menuOpen">
 
@@ -36,6 +39,7 @@
 
 <script>
 import { ref, onMounted, onUnmounted, inject } from "vue";
+import logoPng from "@/assets/pictures/brand/Terindo-Logo-Horizontal-dark.png";
 
 export default {
   setup() {
@@ -81,7 +85,7 @@ export default {
       document.removeEventListener("click", closeMenuOnOutsideClick);
     });
 
-    return { menuOpen, menuItems, isAdmin, handleLogout };
+    return { menuOpen, menuItems, isAdmin, handleLogout, logoPng };
   }
 };
 </script>
