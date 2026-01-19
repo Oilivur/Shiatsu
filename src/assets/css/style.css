@@ -54,13 +54,16 @@ h1 {
 .content-box {
   max-width: 45rem;
   padding: 2rem;
-  border-radius: 1.25rem;
+  border-radius: 0; /* Rectangular corners */
   text-align: center;
   color: var(--color-text);
   position: relative;
+  box-shadow: none; /* Removed shadows */
+  backdrop-filter: none; /* No blur */
+}
 
-  background: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(14px);
+.content-box::before {
+  display: none; /* Remove radial gradient shadow */
 }
 
 
@@ -211,12 +214,8 @@ nav a.active {
   }
 
   .content-box {
-    max-width: 95%;
+    max-width: 95%; /* Prevents oversized text boxes */
     padding: 1rem;
-    border-radius: 1rem;
-
-    background: rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(12px);
   }
 
   .content-box p {

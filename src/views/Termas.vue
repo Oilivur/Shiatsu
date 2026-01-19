@@ -57,7 +57,7 @@
 
         <p>
           Seanss on äärmiselt lõõgastav, mis on ka üheks eesmärgiks. Raviv mõju algab terapeudi esimesest puudutusest. 
-          Edasi toimetatakse pea-, kaela, selja ning lõpuks käte ja jalgade meridiaanidega. 
+          Edasi töödeldakse pea-, kaela, selja ning lõpuks käte ja jalgade meridiaanidega. 
           Shiatsu teraapiat tehakse läbi riiete, seetõttu peaks riietus olema kerge ja mugav. Massaažilauda ja õlisid ei kasutata.
         </p>
 
@@ -111,6 +111,7 @@
 
 <style scoped>
 .content-box {
+  position: relative;
   padding-bottom: 4rem; /* ✅ Makes space for price-link */
 }
 
