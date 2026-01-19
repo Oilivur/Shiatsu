@@ -1,6 +1,5 @@
 <template>
   <main>
-    <!-- Standalone Welcome Header -->
     <h1>Tere tulemast!</h1>
 
     <div class="content-box">

@@ -36,7 +36,7 @@
 
 .kontakt-row {
   display: flex;
-  flex-direction: column; /* Stack vertically */
+  flex-direction: column;
   align-items: flex-start;
   font-size: 1.1rem;
   gap: 0.3rem;

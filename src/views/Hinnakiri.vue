@@ -41,7 +41,7 @@
 .price-list li {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* ✅ align items at the top */
+  align-items: flex-start;
   gap: 2rem;
   padding: 0.75rem 0;
   border-bottom: 1px solid rgba(255, 235, 205, 0.4);
@@ -55,7 +55,7 @@
 }
 
 .price-list li span:last-child {
-  min-width: 3.5rem; /* ✅ reserve space for price */
+  min-width: 3.5rem;
   text-align: right;
 }
 
