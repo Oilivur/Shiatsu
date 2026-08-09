@@ -20,7 +20,7 @@
         </li>
         <li>
           <span>MER-teraapia (1,5h)</span>
-          <span>65 €</span>
+          <span>70 €</span>
         </li>
         <li>
           <span>Lomi-Lomi Nui massaaž (1,5h)</span>
